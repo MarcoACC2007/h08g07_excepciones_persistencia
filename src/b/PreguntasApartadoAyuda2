@@ -1,0 +1,4 @@
+Respecto a las preguntas del final de la ayuda 2: "¿Qué obtienes? ¿Por qué existe esa diferencia?".
+
+Al escribir el mensaje sin comillas (Hola Mundo Cruel) detecta cada palabra como argumento (Arg 0 = Hola, Arg 1 = Mundo, Arg 2 = Cruel). Sin embargo, Al escribirlo entre comillas ("Hola Mundo Cruel") detecta todo como un solo argumento (Arg 0 = Hola Mundo Cruel).
+Esto se debe a que el String[] args detecta las palabras separadas por espacios (A menos que se usen comillas).

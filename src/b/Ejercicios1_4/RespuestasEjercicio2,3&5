@@ -1,0 +1,37 @@
+Ejercicio 2: "Prueba a tener objetos dentro de objetos e intentar transformarlos a JSON: ¿Qué ocurre?":
+
+El JSON muestra la información de forma anidada los objetos dentro de los otros (Como por ejemplo ocurre en la clase Account y Customer).
+
+Ejercicio 3: "¿Qué sucede cuando quiero guardar un array? ¿Qué sucede si el array está dentro de un objeto?"
+
+Cuando se intenta guardar un array por si solo aparecerá como una lista de elementos.
+Por ejemplo: String[] = letras = {"a", "b", "c"} la mostrará así --> [a, b, c].
+
+Cuando se intenta guardar un array dentro de un elemento aparecerá como un elemento de este.
+Por ejemplo:
+        public class miClase{
+            String[] letras;
+        }
+En el JSON se verá así --> {
+                            "letras": ["a", "b", "c"]
+                            }
+
+
+Ejercicio 5: "Ejercicio 5: El proceso de persistencia, denominado serialización, permite transformar los objetos java en
+              datos para ser almacenados o enviados por la red. En este cuaderno lo hemos visto con el formato de
+              intercambio JSON, pero existen otras maneras. Explora estas otras maneras por tu cuenta: Busca
+              información en la documentación oficial de java:
+              https://docs.oracle.com/javase/8/docs/technotes/guides/serialization/index.html
+              ¿Qué diferencias encuentras con lo que hemos hecho aquí?"
+
+
+    La serialización JSON (La que hemos usado en este trabajo) convierte los objetos en texto para poder leerlos y
+leerlos facilmente desde el punto de vista del ser humano.
+
+    Los otros tipos de serializacion en Java que funcionan de distinta manera: los objetos se guardan en un formato binario
+dificil de leer para el ser humano, y las clases tienen que implementar "Serializable" para poder usarse. Este método guarda
+todo el estado interno del objeto, pero solo sirve dentro del propio Java y es más delicado si cambias las clases.
+
+En resumen: JSON es mas facil y universal para nosotros a comparación de la  serialización nativa de Java, la cual es
+binaria, menos flexible y pensada para uso  interno dentro del propio Java.
+*/

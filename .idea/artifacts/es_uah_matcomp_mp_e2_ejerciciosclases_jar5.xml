@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="es.uah.matcomp.mp.e2.ejerciciosclases:jar5">
+    <output-path>$PROJECT_DIR$/out/artifacts/es_uah_matcomp_mp_e2_ejerciciosclases_jar5</output-path>
+    <root id="archive" name="es.uah.matcomp.mp.e2.ejerciciosclases.jar">
+      <element id="module-output" name="es.uah.matcomp.mp.e2.ejerciciosclases" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/gson-2.10.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
